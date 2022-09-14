@@ -1,0 +1,131 @@
+	.main {
+		width: 60vw;
+		height: auto;
+		margin-left: 20vw;
+		margin-top: 5vw;
+		background-color: #090a0a;
+		border: 0px solid #251314;
+		border-radius: 3%;
+		animation-name: bordeeer;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+	}
+
+	.uptitle {
+		color: white;
+		font-size: 3.0vh;
+		left: auto;
+		text-align: center;
+		font-family: "Lucida Console", "Courier New", monospace;
+	}
+
+	.timetitle {
+		color: white;
+		font-size: 2.0vh;
+		left: auto;
+		text-align: center;
+		font-family: "Lucida Console", "Courier New", monospace;
+	}
+	.cardbox {
+		display:table;
+		background-color: none;
+		margin-left: 2vh;
+		width: 58vw;
+		height: auto;
+
+	}
+	.card {
+		display:table-row;
+		margin: 1vh;
+		position: relative;
+		display: inline-block;
+		width: 17vh;
+		height: 17vh;
+		left: auto;
+		text-align: center;
+		background-image: url("img/card.png");
+		background-size: cover;
+		border: 1px solid black;
+		border-radius: 5%;
+
+	}
+	.pairs {
+		display: inline-block;
+		color: white;
+		font-family: "Lucida Console", "Courier New", monospace;
+		font-size: 1vw;
+	
+	}
+	.pairbtn {
+		background-color: #251314;
+		border: 1px solid black;
+		height: 1.5vw;
+		font-size: 1.5vh;
+
+}
+	.pairbtn:hover {
+		background-color: #471d1f;
+		cursor:pointer;
+	}
+	.pairsnr {
+		width: 3vw;
+		height: 2vw;
+		text-align: center;
+		border-radius: 5px;
+		font-size: 1.5vw;
+		border: 3px solid #251314;
+	}
+.oncardnr {
+	display: table-row;
+	font-size: 3vw;
+	color: white;
+	text-align: center;
+	background-color: rgba(0,0,0,50%);
+	justify-content: center;
+	justify-items:center;
+	justify-self:center;
+}
+
+	@keyframes bordeeer {
+		0% {
+			border: 5px solid #111111;
+		}
+
+		25% {
+			border: 5px solid #251314;
+		}
+
+		50% {
+			border: 5px solid #111111;
+		}
+
+		75% {
+			border: 5px solid #251314;
+		}
+
+		100% {
+			border: 5px solid #111111;
+		}
+	}
+
+	@keyframes cardreverse {
+		0% {
+			transform: rotate3d(1, 1, 1, 45deg);
+		}
+
+		25% {
+			border: 5px solid #251314;
+		}
+
+		50% {
+			border: 5px solid #111111;
+		}
+
+		75% {
+			border: 5px solid #251314;
+		}
+
+		100% {
+			border: 5px solid #111111;
+		}
+	}
